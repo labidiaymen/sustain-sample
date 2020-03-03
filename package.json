@@ -1,0 +1,23 @@
+{
+  "name": "sustain-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node dev",
+    "start": "npm run serve",
+    "serve": "node dist/app.js",
+    "build": "tsc",
+    "watch-ts": "tsc -w --noImplicitAny"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "source-map-support": "^0.5.16",
+    "typescript": "^3.6.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sustain/core": "file:../sustain"
+  }
+}
