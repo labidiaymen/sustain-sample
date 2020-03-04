@@ -1,4 +1,4 @@
-import { Get, Controller, Request } from "@sustain/core";
+import { Get, Controller, Request, Session } from "@sustain/core";
 import { UserService } from "../services/user.service";
 
 
@@ -7,9 +7,8 @@ export default class UserController {
     constructor( private userService : UserService) { }
 
     @Get('/users')
-    users() {
-        return "ok";
-
+    users(@Session() session : any) {
+        return "list of users";
     }
     
     @Get('/user/:id')
