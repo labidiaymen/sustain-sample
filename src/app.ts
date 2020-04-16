@@ -13,7 +13,11 @@ const app = {
     providers: [
         UserService
     ],
-    port : 5003
+    port: 5004,
+    staticFolder: [
+        'swagger-ui',
+        ''
+    ]
 }
 /**
  * Bootstrap the application
